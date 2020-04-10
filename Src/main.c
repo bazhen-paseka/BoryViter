@@ -28,6 +28,7 @@
 
 	#include "stdio.h"
 	#include <string.h>
+	#include "boryviter_local_config.h"
 
 /* USER CODE END Includes */
 
@@ -96,6 +97,7 @@ int main(void)
   char Data_to_UART[32];
   int myErrorOsc = 0;
   int myErrorClk = 0;
+  int cnt = 2020;
 
   	sprintf(Data_to_UART, "BoryViter 2020\n\r");
   	HAL_UART_Transmit(&huart1, (uint8_t *)Data_to_UART, strlen(Data_to_UART), 100);
@@ -103,12 +105,22 @@ int main(void)
   	sprintf(Data_to_UART, "UART1, 115200, 8Bit, NoParity\n\r");
   	HAL_UART_Transmit(&huart1, (uint8_t *)Data_to_UART, strlen(Data_to_UART), 100);
 
+	int soft_version_arr_int[3];
+	soft_version_arr_int[0] = ((SOFT_VERSION) / 100) %10 ;
+	soft_version_arr_int[1] = ((SOFT_VERSION) /  10) %10 ;
+	soft_version_arr_int[2] = ((SOFT_VERSION)      ) %10 ;
+
+	char DataChar[100];
+	sprintf(DataChar,"\r\n\tBoryViter 2020-April-10 v%d.%d.%d \r\n\tUART1 for debug on speed 115200/8-N-1\r\n\r\n",
+			soft_version_arr_int[0], soft_version_arr_int[1], soft_version_arr_int[2]);
+	HAL_UART_Transmit(&huart1, (uint8_t *)DataChar, strlen(DataChar), 100);
+
   	sprintf(Data_to_UART, "Osc error = %d\n\r", myErrorOsc);
   	HAL_UART_Transmit(&huart1, (uint8_t *)Data_to_UART, strlen(Data_to_UART), 100);
 
   	sprintf(Data_to_UART, "Clk error = %d\n\r", myErrorClk);
   	HAL_UART_Transmit(&huart1, (uint8_t *)Data_to_UART, strlen(Data_to_UART), 100);
-  	HAL_Delay(1000);
+
 
   /* USER CODE END 2 */
 
@@ -116,6 +128,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		char DataChar[100];
+		sprintf(DataChar,"BoryViter %04d\r\n", cnt++);
+		HAL_UART_Transmit(&huart1, (uint8_t *)DataChar, strlen(DataChar), 100);
+	  	HAL_Delay(1000);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
