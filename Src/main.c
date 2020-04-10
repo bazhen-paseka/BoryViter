@@ -99,12 +99,6 @@ int main(void)
   int myErrorClk = 0;
   int cnt = 2020;
 
-  	sprintf(Data_to_UART, "BoryViter 2020\n\r");
-  	HAL_UART_Transmit(&huart1, (uint8_t *)Data_to_UART, strlen(Data_to_UART), 100);
-
-  	sprintf(Data_to_UART, "UART1, 115200, 8Bit, NoParity\n\r");
-  	HAL_UART_Transmit(&huart1, (uint8_t *)Data_to_UART, strlen(Data_to_UART), 100);
-
 	int soft_version_arr_int[3];
 	soft_version_arr_int[0] = ((SOFT_VERSION) / 100) %10 ;
 	soft_version_arr_int[1] = ((SOFT_VERSION) /  10) %10 ;
@@ -131,6 +125,7 @@ int main(void)
 		char DataChar[100];
 		sprintf(DataChar,"BoryViter %04d\r\n", cnt++);
 		HAL_UART_Transmit(&huart1, (uint8_t *)DataChar, strlen(DataChar), 100);
+		HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 	  	HAL_Delay(1000);
 
     /* USER CODE END WHILE */
