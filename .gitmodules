@@ -1,0 +1,3 @@
+[submodule "Drivers/boryviter_sm"]
+	path = Drivers/boryviter_sm
+	url = https://github.com/bazhen-paseka/boryviter_sm.git
