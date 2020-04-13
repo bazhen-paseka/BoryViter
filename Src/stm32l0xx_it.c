@@ -149,7 +149,7 @@ void EXTI4_15_IRQHandler(void)
 {
   /* USER CODE BEGIN EXTI4_15_IRQn 0 */
 
-		BoryViter_Alarm_1_Set_StatusBit(1);
+		BoryViter_Set_Alarm_Flag();
 
   /* USER CODE END EXTI4_15_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_4);
