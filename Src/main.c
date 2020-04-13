@@ -22,6 +22,7 @@
 #include "main.h"
 #include "adc.h"
 #include "i2c.h"
+#include "iwdg.h"
 #include "rtc.h"
 #include "usart.h"
 #include "gpio.h"
@@ -96,6 +97,7 @@ int main(void)
   MX_ADC_Init();
   MX_I2C1_Init();
   MX_RTC_Init();
+  MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
 
   	  	  BoryViter_Init();
