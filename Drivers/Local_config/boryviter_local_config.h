@@ -8,6 +8,12 @@
 #ifndef BORYVITER_LOCAL_CONFIG_H_
 #define BORYVITER_LOCAL_CONFIG_H_
 
-	#define SOFT_VERSION		10
+/*
+**************************************************************************
+*								    DEFINES
+**************************************************************************
+*/
+
+	#define SOFT_VERSION		100
 
 #endif /* BORYVITER_LOCAL_CONFIG_H_ */
