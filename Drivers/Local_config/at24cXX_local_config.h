@@ -8,6 +8,21 @@
 #ifndef LOCAL_CONFIG_AT24CXX_LOCAL_CONFIG_H_
 #define LOCAL_CONFIG_AT24CXX_LOCAL_CONFIG_H_
 
+/*
+**************************************************************************
+*								    DEFINES
+**************************************************************************
+*/
 
+	//#define EEPROM_DEVICE_ADDRESS 0b1010000 << 1
+	#define EEPROM_DEVICE_ADDRESS 0x50 << 1
+
+	#define	EEPROM_MAX_BYTE			32768
+	#define EEPROM_PACKET_SIZE		16
+	#define PACKET_START			250
+	#define PACKET_END				(EEPROM_MAX_BYTE/EEPROM_PACKET_SIZE)
+
+	#define MAGIK_CHAR				0x70
+						//	0x70 "p" -  present
 
 #endif /* LOCAL_CONFIG_AT24CXX_LOCAL_CONFIG_H_ */
