@@ -19,10 +19,10 @@
 
 	#define	EEPROM_MAX_BYTE			32768
 	#define EEPROM_PACKET_SIZE		21
-	#define PACKET_START			550
+	#define PACKET_START			0
 	#define PACKET_END				(EEPROM_MAX_BYTE/EEPROM_PACKET_SIZE)
 
-	#define MAGIK_CHAR				0x70
+	#define MAGIK_CHAR				0x71
 						//	0x70 "p" -  present
 
 #endif /* LOCAL_CONFIG_AT24CXX_LOCAL_CONFIG_H_ */
