@@ -14,6 +14,6 @@
 **************************************************************************
 */
 
-	#define SOFT_VERSION		100
+	#define SOFT_VERSION		110
 
 #endif /* BORYVITER_LOCAL_CONFIG_H_ */

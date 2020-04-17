@@ -14,6 +14,6 @@
 **************************************************************************
 */
 
-	#define BH1750_I2C_ADDR		0x23
+	#define BH1750_I2C_ADDR		0x23<<1
 
 #endif /* LOCAL_CONFIG_BH1750_LOCAL_CONFIG_H_ */
