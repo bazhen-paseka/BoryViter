@@ -1,9 +1,6 @@
 [submodule "Drivers/boryviter_sm"]
 	path = Drivers/boryviter_sm
 	url = https://github.com/bazhen-paseka/boryviter_sm.git
-[submodule "Drivers/bh1750_sm"]
-	path = Drivers/bh1750_sm
-	url = https://github.com/bazhen-paseka/bh1750_sm.git
 [submodule "Drivers/ds3231_sm"]
 	path = Drivers/ds3231_sm
 	url = https://github.com/bazhen-paseka/ds3231_sm.git
