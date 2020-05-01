@@ -1,6 +1,3 @@
 [submodule "Drivers/boryviter_sm"]
 	path = Drivers/boryviter_sm
 	url = https://github.com/bazhen-paseka/boryviter_sm.git
-[submodule "Drivers/at24cXX_sm"]
-	path = Drivers/at24cXX_sm
-	url = https://github.com/bazhen-paseka/at24cXX_sm.git
