@@ -1,18 +1,6 @@
 [submodule "Drivers/boryviter_sm"]
 	path = Drivers/boryviter_sm
 	url = https://github.com/bazhen-paseka/boryviter_sm.git
-[submodule "Drivers/bh1750_sm"]
-	path = Drivers/bh1750_sm
-	url = https://github.com/bazhen-paseka/bh1750_sm.git
-[submodule "Drivers/ds3231_sm"]
-	path = Drivers/ds3231_sm
-	url = https://github.com/bazhen-paseka/ds3231_sm.git
-[submodule "Drivers/i2c_TechMaker_sm"]
-	path = Drivers/i2c_TechMaker_sm
-	url = https://github.com/bazhen-paseka/i2c_TechMaker_sm.git
-[submodule "Drivers/at24cXX_sm"]
-	path = Drivers/at24cXX_sm
-	url = https://github.com/bazhen-paseka/at24cXX_sm.git
 [submodule "Drivers/adc_light_stm32f103_hal_sm"]
 	path = Drivers/adc_light_stm32f103_hal_sm
 	url = https://github.com/bazhen-paseka/adc_light_stm32f103_hal_sm.git
