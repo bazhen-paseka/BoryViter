@@ -4,3 +4,6 @@
 [submodule "Drivers/adc_light_stm32f103_hal_sm"]
 	path = Drivers/adc_light_stm32f103_hal_sm
 	url = https://github.com/bazhen-paseka/adc_light_stm32f103_hal_sm.git
+[submodule "Drivers/at24cXX_sm"]
+	path = Drivers/at24cXX_sm
+	url = https://github.com/bazhen-paseka/at24cXX_sm.git
