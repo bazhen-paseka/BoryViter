@@ -1,3 +1,6 @@
 [submodule "Drivers/boryviter_sm"]
 	path = Drivers/boryviter_sm
 	url = https://github.com/bazhen-paseka/boryviter_sm.git
+[submodule "Drivers/adc_light_stm32f103_hal_sm"]
+	path = Drivers/adc_light_stm32f103_hal_sm
+	url = https://github.com/bazhen-paseka/adc_light_stm32f103_hal_sm.git
